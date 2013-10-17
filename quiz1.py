@@ -1,0 +1,7 @@
+# Grader: Ulises Herrera
+# heruli08
+
+import Lab2
+while(Lab2.n>0)
+    Print "HELLO WORLD
+    Lab2.n-=1
