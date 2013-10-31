@@ -1,0 +1,40 @@
+Name: Amber
+Evergreen Login: hartra06
+Computer Science Foundations
+Programming as a Way of Life
+Fall 2013
+Homework 3 
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+Problem 1:
+
+(No answers in this file.)
+
+Problem 2:
+
+GC-content: 0.43029262963
+
+Problem 3:
+
+The program returned an error because a variable became undefined. The same would happen if you commented out gc_count
+
+Problem 4:
+
+GC-content: 0.43029262963
+AC-content: 0.502978333333
+AT-content: 0.568993851852
+
+Collaboration:
+
+None
+
+Reflection:
+
+...
