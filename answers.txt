@@ -31,6 +31,23 @@ GC-content: 0.43029262963
 AC-content: 0.502978333333
 AT-content: 0.568993851852
 
+Sample_1.fastq
+
+GC-content: 0.43029262963
+AT-content: 0.568993851852
+A-content: 0.285232851852
+C-content: 0.217745481481
+G-content: 0.212547148148
+T-content: 0.283761
+Sum: 26980735
+Total count: 27000000
+Sequence Length: 27000000
+AT/GC-ratio: 1.32234161747
+GC Classification: Moderate GC Content
+Travis-Hares-MacBook-Pro:homework3 travishare$ 
+
+
+
 Collaboration:
 
 None
