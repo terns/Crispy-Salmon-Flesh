@@ -1,0 +1,9 @@
+Do the following to get credit:
+
+* Finish problem 1 of hw8, generating the file romeo-and-juliet.pdf. Commit this,
+and social_network.py to your github repo.
+* Write and submit your self-eval and faculty evals for me, Neal, and Sherri online at my.evergreen.edu
+
+Do this by 5pm tomorrow (Friday).
+
+Thanks, Paul
