@@ -8,20 +8,23 @@ public class SpiderSong{
     public static void fly(){
         swallowed("fly");
         System.out.println("I dont know why she swallowed a fly,");
-        System.out.println("Perhaps she'll die");
+        System.out.println("Perhaps she'll die \n");
     }
     public static void spider(){
+        swallowed("spider");
         System.out.println("That wriggled and iggled and jiggled inside her.");
         tocatch("spider", "fly");
         fly();
     }
     public static void bird(){
+        swallowed("bird");
         System.out.println("How absurd to swallow a bird.");
         tocatch("bird", "spider");
         tocatch("spider", "fly");
         fly();
     }
     public static void cat(){
+        swallowed("cat");
         System.out.println("Imagine that to swallow a cat.");
         tocatch("cat", "bird");
         tocatch("bird", "spider");
@@ -29,6 +32,7 @@ public class SpiderSong{
         fly();
     }
     public static void dog(){
+        swallowed("dog");
         System.out.println("What a hog to swallow a dog.");
         tocatch("dog", "cat");
         tocatch("cat", "bird");
@@ -37,6 +41,7 @@ public class SpiderSong{
         fly();
     }
     public static void cow(){
+        swallowed("cow");
         System.out.println("I don't know how she swallowed a cow.");
         tocatch("cow", "dog");
         tocatch("dog", "cat");
