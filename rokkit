@@ -61,12 +61,41 @@ public class RocketShip {
                                 for(int j=0; j<(3-i); j++){
                                         result +=".";
                                 }
+                                
     
-                }
+                        }
+                        
             result += "|";
             result += "\n";
             }
-                
+            
+                for (int i=1; i<=3; i++){
+
+                        for(int k=0; k<11; k++){
+                                result += " ";
+                                }
+                        result += "|";
+                        for(int k=2; k>0; k--){
+                                
+                                for(int j=0; j<(i-1); j++){
+                                        result +=".";
+                                }
+                                
+                                for(int j=3; j>=(0+i); j--){
+                                        result += "\\/";
+                                }
+                                for(int j=2; j>(3-i); j--){
+                                        result +=".";
+                                }
+                                
+    
+                        }
+                        
+            result += "|";
+            result += "\n";
+            }
+            
+             
             return result;    
             
         }
