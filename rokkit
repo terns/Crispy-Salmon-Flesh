@@ -113,11 +113,7 @@ public class RocketShip {
     }
 public static void main(String[] args) {  
     String RocketShip = "";
-    int input;
-    Scanner a = new Scanner(System.in);
-    System.out.println("Enter an integer");
-        input = in.nextInt();
-    RocketShip += construction(input);
+    RocketShip += construction(3);
     //you can change the length of the rocket by manipulating the 
     //construction input
     
