@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class RocketShip {
 
         
@@ -99,11 +100,28 @@ public class RocketShip {
             return result;    
             
         }
-public static void main(String[] args) {
-    String baseString = "";
-    baseString += nosecone();
-    baseString += divider();
-    baseString += bodypart();
-    System.out.println(baseString);
+    static String construction(int x){
+        String baseString = "";
+        baseString += nosecone();
+        for(int i=0; i<x; i++){
+        baseString += divider();
+        baseString += bodypart();            
+        }
+        baseString += divider();
+        baseString += nosecone();
+        return baseString;
+    }
+public static void main(String[] args) {  
+    String RocketShip = "";
+    int input;
+    Scanner a = new Scanner(System.in);
+    System.out.println("Enter an integer");
+        input = in.nextInt();
+    RocketShip += construction(input);
+    //you can change the length of the rocket by manipulating the 
+    //construction input
+    
+
+    System.out.println(RocketShip);
 }
 }
