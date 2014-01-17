@@ -1,0 +1,45 @@
+public class RocketShip {
+        static int base = 5;
+        
+        static String nosecone(int n, int d, int l){
+                String result = "";
+                for (int i=1; i<=base; i++){
+                        for(int k=0; k<l; k++){
+                                result += " ";
+                                }
+                        for(int k=0; k<n; k++){
+                                for(int j=0; j<d; j++){
+                                        result += " ";
+                                }
+                                for(int j=0; j<(base-i); j++){
+                                        result +=" ";
+                                }
+                                
+                                for(int j=0; j<(i); j++){
+                                        result += "/";
+                                }
+                                
+                                result +="**";
+                                
+                                
+                                for(int j=0; j<(i); j++){
+                                        result += "\\";
+                        
+                                }
+                        }
+                        result += "\n";
+                }
+                return result;
+                
+        }
+        static String divider(){
+            String result = "+=*=*=*=*=*=*+";
+            return result;
+        }
+public static void main(String[] args) {
+    String baseString = "";
+    baseString += nosecone(1, 0, 12);
+    baseString += divider();
+    System.out.println(baseString);
+}
+}
