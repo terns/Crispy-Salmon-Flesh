@@ -1,17 +1,17 @@
 public class RocketShip {
-        static int base = 5;
+
         
-        static String nosecone(int n, int d, int l){
+        static String nosecone(){
                 String result = "";
-                for (int i=1; i<=base; i++){
-                        for(int k=0; k<l; k++){
+                for (int i=1; i<=5; i++){
+                        for(int k=0; k<12; k++){
                                 result += " ";
                                 }
-                        for(int k=0; k<n; k++){
-                                for(int j=0; j<d; j++){
+                        for(int k=0; k<1; k++){
+                                for(int j=0; j<0; j++){
                                         result += " ";
                                 }
-                                for(int j=0; j<(base-i); j++){
+                                for(int j=0; j<(5-i); j++){
                                         result +=" ";
                                 }
                                 
@@ -32,14 +32,49 @@ public class RocketShip {
                 return result;
                 
         }
-        static String divider(){
-            String result = "+=*=*=*=*=*=*+";
+    static String divider(){
+            String result = "";
+            for(int j=0; j<11; j++){
+                    result += " ";
+            }
+            result += "+=*=*=*=*=*=*+";
+            result += "\n";
             return result;
+        }
+    static String bodypart(){
+        String result = "";
+                for (int i=1; i<=3; i++){
+
+                        for(int k=0; k<11; k++){
+                                result += " ";
+                                }
+                        result += "|";
+                        for(int k=0; k<2; k++){
+                                
+                                for(int j=0; j<(3-i); j++){
+                                        result +=".";
+                                }
+                                
+                                for(int j=0; j<(i); j++){
+                                        result += "/\\";
+                                }
+                                for(int j=0; j<(3-i); j++){
+                                        result +=".";
+                                }
+    
+                }
+            result += "|";
+            result += "\n";
+            }
+                
+            return result;    
+            
         }
 public static void main(String[] args) {
     String baseString = "";
-    baseString += nosecone(1, 0, 12);
+    baseString += nosecone();
     baseString += divider();
+    baseString += bodypart();
     System.out.println(baseString);
 }
 }
