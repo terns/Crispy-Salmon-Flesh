@@ -37,6 +37,8 @@ def state_edges(election_result_rows):
     """
 
     state_edges = {}
+    
+    # Your answer looks a lot neater than mine. 
     for i in range(len(election_result_rows)):
         edge = float(election_result_rows[i]['Dem']) - float(election_result_rows[i]['Rep'])
         state_edges[(election_result_rows[i]['State'])] = edge
