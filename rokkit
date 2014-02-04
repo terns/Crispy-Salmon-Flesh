@@ -1,0 +1,123 @@
+import java.util.Scanner;
+public class RocketShip {
+
+        
+        static String nosecone(){
+                String result = "";
+                for (int i=1; i<=5; i++){
+                        for(int k=0; k<12; k++){
+                                result += " ";
+                                }
+                        for(int k=0; k<1; k++){
+                                for(int j=0; j<0; j++){
+                                        result += " ";
+                                }
+                                for(int j=0; j<(5-i); j++){
+                                        result +=" ";
+                                }
+                                
+                                for(int j=0; j<(i); j++){
+                                        result += "/";
+                                }
+                                
+                                result +="**";
+                                
+                                
+                                for(int j=0; j<(i); j++){
+                                        result += "\\";
+                        
+                                }
+                        }
+                        result += "\n";
+                }
+                return result;
+                
+        }
+    static String divider(){
+            String result = "";
+            for(int j=0; j<11; j++){
+                    result += " ";
+            }
+            result += "+=*=*=*=*=*=*+";
+            result += "\n";
+            return result;
+        }
+    static String bodypart(){
+        String result = "";
+                for (int i=1; i<=3; i++){
+
+                        for(int k=0; k<11; k++){
+                                result += " ";
+                                }
+                        result += "|";
+                        for(int k=0; k<2; k++){
+                                
+                                for(int j=0; j<(3-i); j++){
+                                        result +=".";
+                                }
+                                
+                                for(int j=0; j<(i); j++){
+                                        result += "/\\";
+                                }
+                                for(int j=0; j<(3-i); j++){
+                                        result +=".";
+                                }
+                                
+    
+                        }
+                        
+            result += "|";
+            result += "\n";
+            }
+            
+                for (int i=1; i<=3; i++){
+
+                        for(int k=0; k<11; k++){
+                                result += " ";
+                                }
+                        result += "|";
+                        for(int k=2; k>0; k--){
+                                
+                                for(int j=0; j<(i-1); j++){
+                                        result +=".";
+                                }
+                                
+                                for(int j=3; j>=(0+i); j--){
+                                        result += "\\/";
+                                }
+                                for(int j=2; j>(3-i); j--){
+                                        result +=".";
+                                }
+                                
+    
+                        }
+                        
+            result += "|";
+            result += "\n";
+            }
+            
+             
+            return result;    
+            
+        }
+    static String construction(int x){
+        String baseString = "";
+        baseString += nosecone();
+        for(int i=0; i<x; i++){
+        baseString += divider();
+        baseString += bodypart();            
+        }
+        baseString += divider();
+        baseString += nosecone();
+        return baseString;
+    }
+public static void main(String[] args) {  
+    String RocketShip = "";
+    RocketShip += construction(3);
+    //you can change the length of the rocket by manipulating the 
+    //construction input
+    
+
+    System.out.println(RocketShip);
+}
+}
